@@ -29,7 +29,7 @@ const BlogPostItem: React.FC<Props> = ({ post, index }) => {
       </Typography>
     </CardContent>
     <CardActions>
-      <Button size="small" component={Link} to={{ pathname: `/post/${index}` }}>
+      <Button size="small" component={Link} to={{ pathname: `/NewsAPI-App/post/${index}` }}>
         Read More
       </Button>
     </CardActions>

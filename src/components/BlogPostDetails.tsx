@@ -23,6 +23,7 @@ const BlogPostDetails: React.FC = () => {
       const fetchPost = async () => {
         try {
           const response = await axios.get(`https://newsapi.org/v2/top-headlines?country=us&page=${page}&apiKey=${process.env.REACT_APP_NEWS_API_KEY}`);
+          console.log("The response from API :",response)
           const postIndex = parseInt(id, 10);
           if (!isNaN(postIndex) && response.data.articles[postIndex]) {
             setPost(response.data.articles[postIndex]);
@@ -49,7 +50,7 @@ const BlogPostDetails: React.FC = () => {
       <Typography variant="h6" style={{ flexGrow: 1 }}>
         News App
       </Typography>
-      <Button color="inherit" component={Link} to="/">
+      <Button color="inherit" component={Link} to="/NewsAPI-App">
         Back to list
       </Button>
     </Toolbar>
@@ -70,7 +71,7 @@ const BlogPostDetails: React.FC = () => {
       </CardContent>
     </Card>
     <Box marginTop={2}>
-      <Button variant="contained" color="primary" component={Link} to="/">
+      <Button variant="contained" color="primary" component={Link} to="/NewsAPI-App">
         Back to list
       </Button>
     </Box>
