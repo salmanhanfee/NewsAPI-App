@@ -8,8 +8,8 @@ const App: React.FC = () => {
     <Router>
       <div>
         <Routes>
-          <Route path="/" element={<BlogPostList />} />
-          <Route path="/post/:id" element={<BlogPostDetails />} />
+          <Route path="/NewsAPI-App" element={<BlogPostList />} />
+          <Route path="/NewsAPI-App/post/:id" element={<BlogPostDetails />} />
         </Routes>
       </div>
     </Router>
