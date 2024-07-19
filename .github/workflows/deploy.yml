@@ -3,7 +3,7 @@ name: Deploy React App to GitHub Pages
 on:
   push:
     branches:
-      - main  # or your default branch
+      - main # Adjust this if your default branch is not `main`
 
 jobs:
   build-and-deploy:
@@ -16,15 +16,15 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '20'  # Use the version you need
+          node-version: "16" # Specify the Node.js version you need
 
       - name: Install dependencies
         run: npm install
 
       - name: Build the project
-        run: npm run build
         env:
           REACT_APP_NEWS_API_KEY: ${{ secrets.REACT_APP_NEWS_API_KEY }}
+        run: npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
