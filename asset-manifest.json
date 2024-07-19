@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/NewsAPI-App/static/css/main.659e57cc.css",
+    "main.js": "/NewsAPI-App/static/js/main.17c3ae6a.js",
+    "index.html": "/NewsAPI-App/index.html",
+    "main.659e57cc.css.map": "/NewsAPI-App/static/css/main.659e57cc.css.map",
+    "main.17c3ae6a.js.map": "/NewsAPI-App/static/js/main.17c3ae6a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.659e57cc.css",
+    "static/js/main.17c3ae6a.js"
+  ]
+}
